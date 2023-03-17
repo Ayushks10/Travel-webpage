@@ -1,0 +1,60 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+*{
+    font-family: 'Yantramanav', sans-serif;
+
+  }
+
+header {
+    height: 45rem;
+    background-size: cover;
+    background-image: url('https://wallpaperaccess.com/full/1431610.jpg');
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hidden-spacer {
+    height: 56px;
+}
+
+header h2{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 25px;
+    color: aliceblue;
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+header .model{
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 47%;
+}
+
+.iconDiv {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.icon i{
+    font-size: 20px;
+}

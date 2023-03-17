@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel page</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h2>“The journey of a thousand miles begins with a single step.”</h2>
+        <div class="model">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn text-light bg-transparent btn-lg" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Enquiry
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Enqury form</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!--Section: Contact v.2-->
+                            <section class="mb-4">
+
+                                <!--Section heading-->
+                                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                                <!--Section description-->
+                                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do
+                                    not hesitate to contact us directly. Our team will come back to you within
+                                    a matter of hours to help you.</p>
+
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-9 mb-md-0 mb-5">
+                                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                                            <!--Grid row-->
+                                            <div class="row">
+
+                                                <!--Grid column-->
+                                                <div class="col-md-6">
+                                                    <div class="md-form mb-0">
+                                                        <label for="name" class="">Your name</label>
+                                                        <input type="text" id="name" name="name" class="form-control">
+
+                                                    </div>
+                                                </div>
+                                                <!--Grid column-->
+
+                                                <!--Grid column-->
+                                                <div class="col-md-6">
+                                                    <div class="md-form mb-0">
+                                                        <label for="email" class="">Your email</label>
+                                                        <input type="text" id="email" name="email" class="form-control">
+
+                                                    </div>
+                                                </div>
+                                                <!--Grid column-->
+
+                                            </div>
+                                            <!--Grid row-->
+
+                                            <!--Grid row-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="md-form mb-0">
+                                                        <label for="subject" class="">Subject</label>
+                                                        <input type="text" id="subject" name="subject"
+                                                            class="form-control">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Grid row-->
+
+                                            <!--Grid row-->
+                                            <div class="row">
+
+                                                <!--Grid column-->
+                                                <div class="col-md-12">
+
+                                                    <div class="md-form">
+                                                        <label for="message">Your message</label>
+                                                        <textarea type="text" id="message" name="message" rows="2"
+                                                            class="form-control md-textarea"></textarea>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!--Grid row-->
+
+                                        </form>
+
+                                        <div class="text-center text-md-left">
+                                            <a class="btn btn-primary"
+                                                onclick="document.getElementById('contact-form').submit();">Send</a>
+                                        </div>
+                                        <div class="status"></div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-3 text-center">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                                <p>Fort kochi, KL 94126, Kerala</p>
+                                            </li>
+
+                                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                                <p>+91 9526815452</p>
+                                            </li>
+
+                                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                                <p>contact@travelinsta.com</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+
+                            </section>
+                            <!--Section: Contact v.2-->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./Images/logo (2).png" alt="Bootstrap" width="70" height="64">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pr-2">
+                    <li class="nav-item active">
+                        <a class="nav-link fs-5 pr-5 text-bold " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown fs-5 pr-5">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Places
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#beach">Beach</a></li>
+                            <li><a class="dropdown-item" href="#mountain">Mountain</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#desert">Desert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-5 fs-5" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-5 fs-5" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="sticky-top bg-transparent text-dark hidden-spacer"> </div>
+
+    <!-- section 2 -->
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Beach
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Beaches provide many recreational opportunities for millions of people.
+                        Boating, fishing, swimming, walking, beachcombing, bird-watching, playing and sunbathing are
+                        among
+                        the common activities beachgoers enjoy. Beaches provide protection to residents living near the
+                        ocean by acting as a buffer against the high winds and waves of powerful storms or rough seas.
+
+                        Beaches also play an important role in the economy. Spending time at an ocean beach is one of
+                        the
+                        fastest-growing nature-based outdoor activities in the India.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Mountains
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Mountains are the world’s “water towers,” providing 60-80% of all
+                        freshwater
+                        resources for our planet. At least half of the world’s population depends on mountain ecosystem
+                        services to survive – not only water but also food and clean energy.
+
+                        However, all available records indicate that glaciers in mountain ranges around the world are
+                        retreating and disappearing due to climate change. At least 600 glaciers have disappeared
+                        completely
+                        over the past decades, affecting water supplies relied on by billions living downstream. For
+                        example, in Pakistan, water originating from the Hindu Kush Himalayas provides 80% of irrigation
+                        for
+                        the Indus Basin, where food is grown for 180 million people. </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Desert
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">As well as biodiversity and their cultural significance, deserts are
+                        also
+                        useful economically due to their unique geological profiles or their environmental formation
+                        processes. The desert biome is one of the most important. There are 15 mineral deposit types on
+                        our
+                        planet and 13 of them are found in deserts. This makes the desert an important place for mineral
+                        resources and for local and global economy. The reason this is the case is how water leaches
+                        through
+                        the ground or through evaporation so quickly that mineral deposits are left behind. We discussed
+                        the
+                        problem with irrigation in Mesopotamia in the archaeology section where increased salt deposits
+                        made
+                        agriculture more difficult.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section - 3 - beach -->
+    <div id="beach" class=" container mt-5">
+        <h1>BEACHES</h1>
+        <div class="row pt-2">
+            <div class="col-md-3 pt-5 pb-3">
+                <div class="card" style="width:100%;">
+                    <img src="https://www.acroncandolimresortgoa.com/explore-goa/beaches-in-goa/candolim-beach/images/candolim-beach.jpg"
+                        class="card-img-top" alt="beach1">
+                    <div class="card-body">
+                        <h5 class="card-title">Candolim beach</h5>
+                        <p class="card-text">One of the longest beaches in Goa, Candolim Beach is also sometimes called
+                            the gateway to the other popular beaches in the state. The beach that begins from Fort
+                            Aguada is comparatively quieter and is perfect for lazing, though for watersports lovers,
+                        </p>
+                        <a href="https://www.tourmyindia.com/states/goa/candolim-beach.html" target="_blank"
+                            class="btn btn-primary">know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pt-5 pb-3">
+                <div class="card" style="width: 100%;">
+                    <img src="https://arpitabeachresort.in/img/localplace/chandipur-beach.jpg" class="card-img-top"
+                        alt="beach2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chandipur Beach</h5>
+                        <p class="card-text">
+                            Chandipur is a beach like no other. During low tides the beach recedes upto 5 KM offering
+                            visitors the opportunity to walk on the sea bed. This unique phenomenon helps the beach to
+                            support its equally unique perfect for lazing, though for watersports lovers,
+
+                        </p>
+                        <a href="https://www.tripadvisor.in/Attraction_Review-g1584841-d2639791-Reviews-Chandipur_Beach-Balasore_Balasore_District_Odisha.html"
+                            target="_blank" class="btn btn-primary">know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pt-5 pb-3">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.ytimg.com/vi/1lzoEZ4QR7k/maxresdefault.jpg" class="card-img-top" alt="beach3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fort Kochi</h5>
+                        <p class="card-text">A very beautiful Fort Kochi beach is located on the western coast of India
+                            and is often known as the 'Queen of the Arabian Sea'. It's a serene beach that offers a
+                            scenic view and natural beauty to its visitors.perfect for lazing, though for watersports
+                            lovers,
+                            there are some activities like parasailing and water </p>
+                        <a href="https://en.wikipedia.org/wiki/Fort_Kochi" target="_blank" class="btn btn-primary">know
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pt-5 pb-3">
+                <div class="card" style="width: 100%;">
+                    <img src="https://images.unsplash.com/photo-1610817201767-793a9130ce07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmFya2FsYXxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        class="card-img-top" alt="beach4">
+                    <div class="card-body">
+                        <h5 class="card-title">Varkala Cliff</h5>
+                        <p class="card-text">Varkala beach is the only place in southern Kerala where cliffs are found
+                            adjacent to the Arabian Sea. These cliffs are of tertiary sedimentary formation.perfect for
+                            lazing, though for watersports lovers,
+                            there are some activities like
+                        </p>
+                        <a href="https://www.tripadvisor.in/Attraction_Review-g297639-d11962183-Reviews-Varkala_Cliff-Varkala_Town_Varkala_Thiruvananthapuram_District_Kerala.html"
+                            target="_blank" class="btn btn-primary">know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center mt-4">
+        <div class="d-grid gap-2">
+            <a href="https://en.wikipedia.org/wiki/List_of_beaches_in_India" target="_blank"><button
+                    class="btn btn-primary" type="button">To know about more beaches</button></a>
+
+        </div>
+    </div>
+    <!-- Section 3 - Mountain -->
+    <section id="mountain">
+        <div class="container pt-5">
+            <h1>MOUNTAINS</h1>
+            <div class="mount-section pt-5">
+                <div class="card mb-3">
+                    <img src="https://thumbs.dreamstime.com/b/mount-everest-sunset-beautiful-himalayan-landscape-view-gokyo-ri-177016091.jpg"
+                        class="card-img-top" alt="mon1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Everest
+                        </h5>
+                        <p class="card-text">Mount Everest is Earth's highest mountain above sea level, located in the
+                            Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit
+                            point. Its elevation of 8,848.86 m was most recently established in 2020 by the Chinese and
+                            Nepali authorities.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="https://img.onmanorama.com/content/dam/mm/en/travel/kerala/images/2021/7/22/meesapulimala.jpg"
+                        class="card-img-top" alt="mon2">
+                    <div class="card-body">
+                        <h5 class="card-title">Meesapulimala
+
+                        </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="https://4kwallpapers.com/images/wallpapers/kangchenjunga-mountain-range-himalayas-snow-covered-2560x1440-4057.jpg"
+                        class="card-img-top" alt="mon3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kangchenjunga
+                        </h5>
+                        <p class="card-text">Kanchenjunga, also spelled Kangchenjunga or Kinchinjunga, Nepali Kumbhkaran
+                            Lungur, world’s third highest mountain, with an elevation of 28,169 feet (8,586 metres). It
+                            is situated in the eastern Himalayas on the border between Sikkim state, northeastern India,
+                            and eastern Nepal, 46 miles (74 km) north-northwest of Darjiling, Sikkim. The mountain is
+                            part of the Great Himalaya Range.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/port-blair/port-blair-barren-island-0.jpg/jcr:content/renditions/cq5dam.web.1800.600.jpeg"
+                        class="card-img-top" alt="mon4">
+                    <div class="card-body">
+                        <h5 class="card-title">Barren Island
+                        </h5>
+                        <p class="card-text">Barren Island is an island located in the Andaman Sea. It is the only
+                            confirmed active volcano in the Indian subcontinent, and the only active volcano along a
+                            chain of volcanoes from Sumatra to Myanmar.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3.3 Deserts -->
+    <section id="desert">
+        <div class="container pt-5">
+            <h1>DESERTS</h1>
+            <div class="row pt-5">
+                <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://w0.peakpx.com/wallpaper/371/37/HD-wallpaper-camel-desert-jaisalmer-rider-riders-thar-thumbnail.jpg"
+                                    class="img-fluid rounded-start" alt="des1">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Thar Desert
+                                    </h5>
+                                    <p class="card-text">The Thar Desert, also known as the Great Indian Desert,
+                                        is an arid region in the north-western part of the Indian subcontinent
+                                        that covers an area of 205,000 km² in India and Pakistan. It is the
+                                        world's 20th-largest desert, and the world's 9th-largest hot subtropical
+                                        desert. </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://wallpaperaccess.com/full/5529055.jpg" class="img-fluid rounded-start"
+                                    alt="des2">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jaisalmer Desert</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a
+                                        natural lead-in to additional content. This content is a little bit
+                                        longer.Vibrant nights make the heart and soul of the desert safari camp
+                                        in Jaisalmer. Wherein you throb to the tune of local music and bask in
+                                        the glory of the moments. These nights are epitomized by folk dance,
+                                        traditional music!</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://i.pinimg.com/736x/8d/c7/5f/8dc75f36e914a0926186b55c203d10aa.jpg"
+                                    class="img-fluid rounded-start" alt="des3">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rann of Kutch
+
+                                    </h5>
+                                    <p class="card-text">The Great Rann of Kutch (or Rann of Kutch seasonal salt
+                                        marsh) is a salt marsh in the Thar Desert in the Kutch District of
+                                        Gujarat, India. It is about 7500 km2 (2900 sq miles) in area and is
+                                        reputed to be one of the largest salt deserts in the world. This area
+                                        has been inhabited by the Kutchi people. </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                    class="img-fluid rounded-start" alt="des2">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Osian
+                                        Desert</h5>
+                                    <p class="card-text">Osian Desert Camps in Rajasthan was a great trading
+                                        center on the silk route from the 8th to 12th century AD. It boasts of a
+                                        number of intricately carved Hindu and Jain temples dating back to the
+                                        6th century. The Majestic Sachiya Mata temple and the Surya temple are
+                                        particularly noteworthy for their carvings.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section 4 About -->
+    <section id="about">
+        <div class="container pt-5">
+            <h1>ABOUT ME</h1>
+            <p class="fst-italic pt-3">
+                My passion is travel, I just love visiting new places, immersing myself into local cultures of life
+                around the world and discovering the unexpected! Stepping off a plane, I’m always in a hurry to get my
+                passport stamped, reclaim my luggage and walk out of the arrivals hall ready to begin a new adventure.
+                I love the planning, the anticipation, the journey, be it by plane, train, bus or boat and of course,
+                the actual holiday and finally all the wonderful memories and experiences I bring home that live with me
+                forever. That was the original reason why I created this blog so that I could have an online diary of my
+                recent trips to look back on in the future. I’ve been surprised but thrilled that so many of you have
+                taken an interest in my travels and enjoy reading about my trips – it’s very encouraging and makes me
+                very happy! From starting as a hobby my blog has evolved into an award winning online travel resource
+                providing inspiration to fellow travellers.
+
+
+            </p>
+        </div>
+
+    </section>
+    <!-- Seciton 5 Contact -->
+    <hr>
+    <section id="contact">
+        <div class="container pt-5">
+            <h1 class="text-center">CONTACT US</h1>
+
+            <div class="iconDiv">
+                <div class="icon">
+                    <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/Ayushks10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/ayuxhks/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://m.facebook.com/profile.php?id=1000043740388" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-center pt-5"> &copy; My Travel Website 2023, All Rights Reserved &reg; Ayush K S </p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
